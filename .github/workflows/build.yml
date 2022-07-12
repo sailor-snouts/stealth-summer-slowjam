@@ -40,5 +40,5 @@ jobs:
           BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
           CHANNEL: html5
           ITCH_GAME: https://diaboloshogun.itch.io/stealth-summer-slow-jam
-          ITCH_USER: diaboloshogunate
+          ITCH_USER: diaboloshogun
           PACKAGE: build/WebGL
