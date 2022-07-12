@@ -19,6 +19,6 @@ jobs:
         uses: github/super-linter@v4
         env:
           VALIDATE_ALL_CODEBASE: true
-          FILTER_REGEX_INCLUDE: ./Assets/Scripts/.*
+          FILTER_REGEX_INCLUDE: ./Assets/(Scripts|Tests)/.*
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
