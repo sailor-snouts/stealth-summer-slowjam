@@ -6,7 +6,7 @@
         public void EditorScriptableTestSimplePasses()
         {
             // Use the Assert class to test conditions.
-            
+
         }
 
         // A UnityTest behaves like a coroutine in PlayMode
