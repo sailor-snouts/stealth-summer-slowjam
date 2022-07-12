@@ -1,0 +1,42 @@
+name: Unit Test
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    name: Build my project 
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Cache
+      - uses: actions/cache@v3
+        with:
+         path: Library
+         key: Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+         restore-keys: |
+          Library-
+
+      # Test
+      - name: Run tests
+        id: test
+        uses: game-ci/unity-test-runner@v2
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+
+      # Output
+      - uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: Test results
+          path: ${{ steps.test.outputs.artifactsPath }}
+          
+      - uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: Coverage results
+          path: ${{ steps.test.outputs.artifactsPath }}
