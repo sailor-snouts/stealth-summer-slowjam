@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    if: github.repository.url == 'sailor-snouts/stealth-summer-slowjam'
+    if: github.repository == 'sailor-snouts/stealth-summer-slowjam'
     runs-on: ubuntu-latest
     steps:
       # Checkout
