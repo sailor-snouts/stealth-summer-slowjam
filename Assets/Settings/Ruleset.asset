@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aacc9d6759304cca8211233b2bc3bcfc, type: 3}
+  m_Name: Ruleset
+  m_EditorClassIdentifier: 
+  <Players>k__BackingField:
+  - {fileID: 11400000, guid: bc1d3d7fe00d844448fa9867471c3e26, type: 2}
+  - {fileID: 11400000, guid: 54bf656ccf8b94b4cb6378a49b9a868c, type: 2}
+  - {fileID: 11400000, guid: 1d19a134096d87b4a970b536cc3281db, type: 2}
+  <StartingSupplies>k__BackingField: 20
+  <SuppliesPerTurn>k__BackingField: 2
+  <UnitMask>k__BackingField:
+    serializedVersion: 2
+    m_Bits: 0
+  <GroundMask>k__BackingField:
+    serializedVersion: 2
+    m_Bits: 0
+  <BlockPathMask>k__BackingField:
+    serializedVersion: 2
+    m_Bits: 0
+  <InteractableMask>k__BackingField:
+    serializedVersion: 2
+    m_Bits: 0
+  <CardMask>k__BackingField:
+    serializedVersion: 2
+    m_Bits: 0
