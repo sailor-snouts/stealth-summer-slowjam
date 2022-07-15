@@ -15,10 +15,10 @@ namespace Scripts.Runtime.Player
 
         public Deck(List<Config.Card> cards)
         {
-            foreach (var card in cards) 
+            foreach (var card in cards)
                 AddCard(new Card(card.Cost, card.Rarity, card.Name, card.Description, card.Image));
         }
-        
+
         public void AddCard(Card card)
         {
             if (!Cards.ContainsKey(card.Rarity))
@@ -28,7 +28,7 @@ namespace Scripts.Runtime.Player
 
             Cards[card.Rarity].Add(card);
         }
-        
+
         public Card DrawCard()
         {
             int roll = Random.Range(0, ChanceSum);

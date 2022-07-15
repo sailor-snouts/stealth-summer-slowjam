@@ -7,7 +7,7 @@ namespace Scripts.Runtime.Player
         public enum CardType { Creature, Spell, Equipment, Item }
         public enum CardRarity { Common, Uncommon, Rare, Epic, Legendary }
 
-        public Sprite Image { get;}
+        public Sprite Image { get; }
         public CardRarity Rarity { get; }
         public string Name { get; }
         public string Description { get; }

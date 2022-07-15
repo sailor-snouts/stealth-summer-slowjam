@@ -7,7 +7,7 @@ namespace Scripts.Runtime.Config
     public class Ruleset : ScriptableObject
     {
         [field: Header("Player")]
-        [field: SerializeField] public List<Player> Players { get; private set; }= new List<Player>();
+        [field: SerializeField] public List<Player> Players { get; private set; } = new List<Player>();
 
         [field: Header("Supplies")]
         [field: SerializeField] public int StartingSupplies { get; private set; } = 20;
@@ -19,7 +19,7 @@ namespace Scripts.Runtime.Config
         [field: SerializeField] public int RareDrawChance { get; private set; } = 3;
         [field: SerializeField] public int EpicDrawChance { get; private set; } = 2;
         [field: SerializeField] public int LegendaryDrawChance { get; private set; } = 1;
-        
+
         [field: Header("Collisions")]
         [field: SerializeField] public LayerMask UnitMask { get; private set; } = 0;
         [field: SerializeField] public LayerMask GroundMask { get; private set; } = 0;
