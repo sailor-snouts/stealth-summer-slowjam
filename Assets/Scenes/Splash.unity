@@ -356,7 +356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <FilePath>k__BackingField: SailorSnoutsSplash.mp4
-  <NextScene>k__BackingField: Scenes/Title
+  <NextScene>k__BackingField: Scenes/Main
   <ContinueInput>k__BackingField: {fileID: 8696571602953231263, guid: b62ca849bf548274b980370594649160,
     type: 3}
 --- !u!82 &942478970
