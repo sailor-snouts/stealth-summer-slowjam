@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Epic Pig
   m_EditorClassIdentifier: 
   <Image>k__BackingField: {fileID: 0}
-  <Rarity>k__BackingField: 2
-  <Name>k__BackingField: Rare Pig
+  <Rarity>k__BackingField: 3
+  <Name>k__BackingField: Epic Pig
   <Description>k__BackingField: Description
   <Cost>k__BackingField: 4
   <Health>k__BackingField: 5
