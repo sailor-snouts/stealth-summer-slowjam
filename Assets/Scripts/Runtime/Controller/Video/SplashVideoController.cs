@@ -17,7 +17,7 @@ namespace Scripts.Runtime.Controller.Video
         {
             VideoPlayer = GetComponent<VideoPlayer>();
             VideoPlayer.source = VideoSource.Url;
-            VideoPlayer.url = System.IO.Path.Combine (Application.streamingAssetsPath, FilePath);
+            VideoPlayer.url = System.IO.Path.Combine(Application.streamingAssetsPath, FilePath);
             VideoPlayer.Prepare();
             VideoPlayer.prepareCompleted += OnPrepareCompleted;
             VideoPlayer.loopPointReached += OnLoopPointReached;
