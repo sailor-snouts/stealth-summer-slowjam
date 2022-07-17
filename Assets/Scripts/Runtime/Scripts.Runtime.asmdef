@@ -1,4 +1,19 @@
 {
-	"name": "Scripts.Runtime",
-	"references":[ "GUID:343deaaf83e0cee4ca978e7df0b80d21", "GUID:2bafac87e7f4b9b418d9448d219b01ab", "GUID:75469ad4d38634e559750d17036d5f7c" ]
+    "name": "Scripts.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "GUID:343deaaf83e0cee4ca978e7df0b80d21",
+        "GUID:2bafac87e7f4b9b418d9448d219b01ab",
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:9f4c0abe8be6e064d8181ff66f558707"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

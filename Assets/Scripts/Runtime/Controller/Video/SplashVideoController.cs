@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Scripts.Runtime.Controller.Animation;
+using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
@@ -11,6 +12,7 @@ namespace Scripts.Runtime.Controller.Video
         [field: SerializeField] private string FilePath { get; set; }
         [field: SerializeField] private string NextScene { get; set; }
         [field: SerializeField] private InputActionReference ContinueInput { get; set; }
+        [field: SerializeField] private SceneTransitionController TransitionController { get; set; }
         private VideoPlayer VideoPlayer { get; set; }
 
         private void OnEnable()
@@ -52,7 +54,7 @@ namespace Scripts.Runtime.Controller.Video
         {
             VideoPlayer.Stop();
             Destroy(gameObject);
-            SceneManager.LoadScene(NextScene);
+            TransitionController.Transition(NextScene);
         }
     }
 }
