@@ -12,7 +12,7 @@ namespace Scripts.Runtime.Controller.Credit
         [field: SerializeField] private CreditsData CreditsData { get; set; }
         [field: SerializeField] private Transform CreditsRoot { get; set; }
         [field: SerializeField] private CreditController CreditTemplate { get; set; }
-        
+
         [field: Header("Transition")]
         [field: SerializeField] private string NextScene { get; set; }
         [field: SerializeField] private InputActionReference ContinueInput { get; set; }

@@ -26,7 +26,7 @@ namespace Scripts.Runtime.Controller.Animation
             });
             CanvasTween.onComplete += onComplete;
         }
-        
+
         public void FadeOut(float duration, TweenCallback onComplete)
         {
             Fade(0f, duration, () =>
@@ -46,11 +46,11 @@ namespace Scripts.Runtime.Controller.Animation
                 CanvasTween = CanvasGroup.DOFade(value, duration);
                 CanvasTween.onComplete += onComplete;
             }
-            
+
             if (AudioMixer != null)
             {
                 if (AudioTween != null) AudioTween.Kill();
-                
+
                 AudioTween = AudioMixer.DOSetFloat("MainVolume", value, duration);
                 AudioTween.onComplete = onComplete;
             }

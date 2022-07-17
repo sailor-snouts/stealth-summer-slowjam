@@ -15,7 +15,7 @@ namespace Scripts.Runtime.Controller.Animation
             Fade = new SceneFade(CanvasGroup, AudioMixer);
             SceneManager.sceneLoaded += OnSceneLoaded;
         }
-        
+
         private void OnDisable()
         {
             Fade = null;

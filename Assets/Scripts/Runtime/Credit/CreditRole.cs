@@ -7,7 +7,7 @@ namespace Scripts.Runtime.Credit
     {
         [field: SerializeField] public string Role { get; set; }
         [field: SerializeField] public List<string> Names { get; set; }
-        
+
         public CreditRole(string role, List<string> names)
         {
             Role = role;

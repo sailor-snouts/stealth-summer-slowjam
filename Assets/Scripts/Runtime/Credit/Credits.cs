@@ -24,12 +24,12 @@ namespace Scripts.Runtime.Credit
                 }
             }
         }
-        
+
         public List<CreditName> GroupedByName()
         {
             return ByName.Values.ToList();
         }
-        
+
         public List<CreditRole> GroupedByRole()
         {
             return ByRole.Values.ToList();
