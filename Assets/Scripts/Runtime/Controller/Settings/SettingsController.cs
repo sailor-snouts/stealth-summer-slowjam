@@ -54,6 +54,7 @@ namespace Scripts.Runtime.Controller.Settings
 
         public void SetMainVolume(float volume)
         {
+            volume = Mathf.Clamp(volume, 0.0001f, 1);
             AudioMixer.SetFloat("MainVolume", Mathf.Log10(volume) * 20f);
             Settings.MainVolume = volume;
         }
@@ -66,6 +67,7 @@ namespace Scripts.Runtime.Controller.Settings
 
         public void SetMusicVolume(float volume)
         {
+            volume = Mathf.Clamp(volume, 0.0001f, 1);
             AudioMixer.SetFloat("MusicVolume", Mathf.Log10(volume) * 20f);
             Settings.MusicVolume = volume;
         }
@@ -78,6 +80,7 @@ namespace Scripts.Runtime.Controller.Settings
 
         public void SetSfxVolume(float volume)
         {
+            volume = Mathf.Clamp(volume, 0.0001f, 1);
             AudioMixer.SetFloat("SfxVolume", Mathf.Log10(volume) * 20f);
             Settings.SfxVolume = volume;
         }
@@ -90,6 +93,7 @@ namespace Scripts.Runtime.Controller.Settings
 
         public void SetVoiceVolume(float volume)
         {
+            volume = Mathf.Clamp(volume, 0.0001f, 1);
             AudioMixer.SetFloat("VoiceVolume", Mathf.Log10(volume) * 20f);
             Settings.VoiceVolume = volume;
         }
