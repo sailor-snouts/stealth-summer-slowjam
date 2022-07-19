@@ -31,6 +31,14 @@ namespace Scripts.Runtime.Controller.Settings
             LoadMusicVolume();
             LoadSfxVolume();
             LoadVoiceVolume();
+
+            MainVolumeSlider.onValueChanged.AddListener(SetMainVolume);
+            MusicVolumeSlider.onValueChanged.AddListener(SetMusicVolume);
+            SfxVolumeSlider.onValueChanged.AddListener(SetSfxVolume);
+            VoiceVolumeSlider.onValueChanged.AddListener(SetVoiceVolume);
+            QualityDropdown.onValueChanged.AddListener(SetQuality);
+            ResolutionDropdown.onValueChanged.AddListener(SetResolution);
+            FullScreenToggle.onValueChanged.AddListener(SetFullscreen);
         }
 
         public void OnDisable()
